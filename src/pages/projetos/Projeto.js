@@ -57,7 +57,7 @@ function Projeto() {
                             </div>
                             <div className='descricaoProjeto'>
                                 <p className='tituloProjetoCriado'>Calculadora - Kotlin</p>
-                                <p>Desenvolvi uma calculadora em Kotlin com Android Studio para realizar cálculos básicos com precisão. A aplicação possui uma interface intuitiva e responsiva, aproveitando ao máximo os recursos da linguagem e da plataforma para uma experiência de usuário eficaz e agradável.</p>
+                                <p>Desenvolvi uma calculadora em Kotlin com Android Studio para cálculos básicos, com uma interface intuitiva e responsiva que oferece uma experiência de usuário eficaz e agradável.</p>
                             </div>
                             <div className='direcionaProjeto'>
                                 <div className='visualizar'>
