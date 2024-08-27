@@ -1,0 +1,176 @@
+/* Estilos existentes */
+
+header {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.container {
+display: flex;
+width: 80%;
+height: 100%;
+justify-content: space-between;
+align-items: center;
+background-color: transparent;
+}
+
+.logo {
+width: 70px;
+height: 70px;
+}
+
+.navbar {
+display: flex;
+gap: 4rem;
+list-style: none;
+justify-content: space-around;
+cursor: pointer; 
+}
+.navbar a {
+text-decoration: none;
+color: inherit;
+transition: 0.40s;
+}
+.navbar a:hover { 
+font-size: 18px;
+border-radius: 20px;
+border: 1px solid;
+padding: 10px;
+}
+.toggleDark{
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.toggle {
+--time: 0.25s;
+appearance: none;
+position: relative;
+font-size: 15px;
+box-sizing: content-box;
+height: 1.5em;
+width: 3em;
+border: 2px solid black;
+border-radius: 10em;
+ /* Cor de fundo do botão */
+cursor: pointer;
+transition: background-color var(--time), border-color var(--time);
+}
+.toggle-label {
+  position: relative;
+  display: inline-block;
+  width: 10em; /* Largura total do toggle */
+  height: 1.5em; /* Altura total do toggle */
+  cursor: pointer;
+}
+
+.toggle::before {
+content: "";
+position: absolute;
+top: 50%;
+left: 0.25em;
+width: 1em;
+height: 1em;
+background-color: black; /* Cor da bolinha */
+border-radius: 50%;
+transform: translateY(-50%);
+transition: left var(--time);
+}
+
+.toggle:checked::before {
+left: calc(100% - 1.25em); /* Posição da bolinha quando checada */
+}
+
+/* Estilo específico para o modo escuro */
+.dark-mode .toggle {
+border-color: rgb(197, 197, 197); /* Cor da borda no modo escuro */
+}
+
+.dark-mode .toggle::before {
+background-color: rgb(197, 197, 197); /* Cor da bolinha no modo escuro */
+}
+
+.responsiveNavbar {
+  display: none;
+}
+
+.navbar.open {
+  display: flex; /* Mostra a navbar quando o menu está aberto */
+  flex-direction: column; /* Alinha os itens verticalmente */
+  position: absolute; /* Posiciona a navbar sobre o conteúdo */
+  top: 80px; /* Ajusta a posição para logo abaixo do header */
+  left: 0;
+  right: 0;
+  background-color: white; /* Cor de fundo */
+  padding: 50px 0; /* Espaçamento interno */
+  z-index: 1000; /* Coloca a navbar sobre outros elementos */
+  align-items: center;
+}
+
+.dark-mode .navbar.open {
+  background-color: #222;
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 95%;
+  }
+  .toggleDark{
+    display: flex;
+    margin-right: 20px;
+  }
+  .navbar {
+    display: none; /* Esconde a navbar em telas pequenas */
+    font-size: 20px;
+  }
+  .navbar a:hover { 
+    font-size: 23px;
+  }
+  .responsiveNavbar {
+    display: flex;
+  }
+  .navbar.open {
+    display: flex; /* Mostra a navbar quando o menu está aberto */
+  }
+  .menu {
+    display: block; /* Exibe o ícone do menu em telas pequenas */
+    height: 30px;
+    width: 30px;
+    cursor: pointer; /* Adiciona cursor de ponteiro */
+  }
+  .logo {
+    width: 70px;
+    height: 70px;
+  }   
+}
+
+@media only screen and (min-width: 481px) and (max-width: 999px) {
+  .navbar {
+    display: none;
+    font-size: 20px;
+  }
+  .responsiveNavbar {
+    display: flex;
+  }
+  .navbar {
+    font-size: 25px;
+  }
+  .navbar a:hover { 
+    font-size: 28px;
+  }
+  .navbar.open {
+    display: flex; /* Mostra a navbar quando o menu está aberto */
+  }
+
+  .menu {
+    display: block; /* Exibe o ícone do menu em telas pequenas */
+    height: 30px;
+    width: 30px;
+    cursor: pointer; /* Adiciona cursor de ponteiro */
+  }
+}

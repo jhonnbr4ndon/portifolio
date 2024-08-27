@@ -1,0 +1,344 @@
+.containerSkills {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.containerSkillsFilho {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    margin-top: 15px;
+    background-color: transparent;
+}
+.containterSkillsResponsivo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.skills {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    margin-right: 25px;
+}
+.certificacoes {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    margin-left: 25px;
+}
+.tituloSkill {
+    font-size: 30px;
+}
+.tituloCertificado {
+    font-size: 30px;
+}
+.subtituloSkills {
+    color: gray;
+    margin-bottom: 20px;
+}
+.subtituloCertificado {
+    color: gray;
+    margin-bottom: 20px;
+}
+.habilidade {
+    display: flex;
+    width: 99.5%;
+    height: 160px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.containerHabilidade {
+    display: flex;
+    width: 95%;
+    height: 85%;
+    flex-direction: column;
+}
+.tecnica {
+    color: dodgerblue;
+    font-size: 11px;
+    margin-top: 10px;
+}
+.tituloHabilidade {
+    margin-top: 3px;
+    margin-bottom: 9px;
+}
+.certificado {
+    display: flex;
+    width: 99.5%;
+    height: 160px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.certificado a {
+    color: inherit; 
+}
+.containerCertificado {
+    display: flex;
+    width: 95%;
+    height: 85%;
+    flex-direction: column;
+}
+.certificadoAno {
+    color: dodgerblue;
+    font-size: 11px;
+    margin-top: 10px;
+}
+.titulo-icon {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.tituloEducacao {
+    margin-top: 3px;
+    margin-bottom: 15px;
+    width: 90%;
+}
+.icon-graduacao {
+    font-size: 23px;
+    padding: 4px;
+    background-color: rgb(148, 148, 148);
+    border-radius: 7px;
+    border: 1px solid;
+}
+.containerHabilidadeResponsivo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.containerCompetenciaResponsivo {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    margin-right: 25px;
+}
+.containerFerramentaResponsivo {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    margin-left: 25px;
+}
+.tituloCompetencia{
+    font-size: 30px;
+    margin-top: 70px;
+}
+.subtituloCompetencia {
+    color: gray;
+    margin-bottom: 20px;
+}
+.competencias {
+    display: flex;
+    width: 99.5%;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+.containerCompetencia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 30px;
+}
+.competenciaIcons {
+    display: flex;
+    align-self: center;
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    transition: 0.99s;
+}
+.competenciaIcons:hover {
+    padding: 11px;
+}
+.tituloFerramenta {
+    font-size: 30px;
+    margin-top: 70px;
+}
+.subtituloFerramenta {
+    color: gray;
+    margin-bottom: 20px;
+}
+.ferramentas {
+    display: flex;
+    width: 99.5%;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+.containerFerramenta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 30px;
+}
+.ferramentaIcons {
+    display: flex;
+    align-self: center;
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    cursor: pointer;
+    transition: 0.99s;
+}
+.ferramentaIcons:hover {
+    padding: 11px;
+}
+
+@media only screen and (max-width: 480px) {
+    .containerSkillsFilho {
+        width: 90%;
+    }
+    .containterSkillsResponsivo {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .skills {
+        width: 100%;
+        margin-right: 0px;
+    }
+    .certificacoes {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .habilidade {
+        width: 100%;
+        height: 230px;
+        margin-top: 15px;
+    }
+    .certificado {
+        width: 100%;
+        height: 200px;
+        margin-top: 15px;
+    }
+    .tituloCertificado {
+        margin-top: 40px;
+    }
+    .containerHabilidadeResponsivo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .containerCompetenciaResponsivo {
+        width: 100%;
+        margin-right: 0px;
+    }
+    .containerFerramentaResponsivo {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .competencias {
+        width: 100%;
+        height: 500px;
+        flex-direction: row;
+        margin-top: 15px;
+    }
+    .containerCompetencia {
+        flex-direction: column;
+        width: 40%;
+    }
+    .tituloCompetencia {
+        margin-top: 40px;
+    }
+    .ferramentas {
+        width: 100%;
+        height: 500px;
+        flex-direction: row;
+        margin-top: 15px;
+    }
+    .containerFerramenta {
+        flex-direction: column;
+        width: 40%;
+    }
+    .tituloFerramenta {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 999px) {
+    .containerSkillsFilho {
+        width: 90%;
+    }
+    .habilidade {
+        width: 100%;
+        height: 230px;
+        margin-top: 15px;
+    }
+    .certificado {
+        width: 100%;
+        height: 230px;
+        margin-top: 15px;
+    }
+    .tituloCertificado {
+        margin-bottom: 22px;
+    }
+    .subtituloCertificado {
+        display: none;
+    }
+    .competencias {
+        width: 100%;
+        height: 500px;
+        flex-direction: row;
+        margin-top: 15px;
+    }
+    .containerCompetencia {
+        flex-direction: column;
+        width: 40%;
+    }
+    .tituloCompetencia {
+        margin-top: 40px;
+    }
+    .ferramentas {
+        width: 100%;
+        height: 500px;
+        flex-direction: row;
+        margin-top: 15px;
+    }
+    .containerFerramenta {
+        flex-direction: column;
+        width: 40%;
+    }
+    .tituloFerramenta {
+        margin-top: 40px;
+    }
+}

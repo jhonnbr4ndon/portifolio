@@ -1,0 +1,37 @@
+.containerVoltar {
+    position: fixed;
+    bottom: 50px;
+    right: 80px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 50%;
+    background-color: #9a9a9a;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: background-color 0.50s;
+}
+.fixedIcon {
+    margin-top: 5px;
+    font-size: 20px;
+    color: white;
+}
+.containerVoltar:hover {
+    background-color: gray
+}
+
+@media only screen and (max-width: 480px) {
+    .containerVoltar {
+        bottom: 30px;
+        right: 25px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 999px) {
+    .containerVoltar {
+        bottom: 30px;
+        right: 30px;
+    }
+}
+  

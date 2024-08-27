@@ -1,23 +1,41 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import Header from './components/header/Header';
+import Home from './pages/home/Home';
+import Projeto from './pages/projetos/Projeto';
+import Sobre from './pages/sobre/Sobre';
+import Skills from './pages/skills/Skills';
+import Contato from './pages/contato/Contato';
+import Footer from './components/footer/Footer';
+import FixedIcon from './components/voltar/FixedIcon';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+  
+  useEffect(() => {
+    AOS.init({ 
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`app ${darkMode ? 'dark-mode' : ''}`}>
+        <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
+        <Home/>
+        <Projeto/>
+        <Sobre/>
+        <Skills/>
+        <Contato/>
+        <Footer/>
+        <FixedIcon/>
     </div>
   );
 }

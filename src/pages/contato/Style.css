@@ -1,0 +1,161 @@
+.containerContato {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin-top: 50px;
+}
+.containerContatoFilho {
+    width: 80%;
+    height: 100%;
+    background-color: transparent;
+}
+.contato {
+    display: flex;
+    width: 100%;
+    height: 580px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.sobreMimContato {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    gap: 10px;
+}
+.tituloContato {
+    margin-top: 50px;
+    font-size: 20px;
+}
+.descricaoContato {
+    font-size: 17px;
+    color: rgb(122, 121, 121);
+}
+.iconsContato {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+}
+.iconsContato a {
+    color: inherit; 
+    padding: 10px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    transition: 0.99s;
+}
+.iconsContato a:hover {
+    background-color: #9a9a9a;
+}
+.containerEntreContato {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 140px;
+}
+.formGroup {
+    margin-bottom: 10px;
+}
+.formGroup label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.formGroup input,
+.formGroup textarea {
+    width: 96%;
+    padding: 10px;
+    border: 1px solid ;
+    border-radius: 4px;
+    background-color: #ccc;
+    color: #fff;
+    font-size: 16px;
+}
+button {
+    width: 33%;
+    margin-top: 10px;
+    padding: 15px 20px;
+    background-color: #016dd2;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.99s ease;
+}
+button:hover {
+    background-color: #004c94;
+}
+.responseMessage {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.responseMessage.success {
+    color: #28a745; /* Verde para sucesso */
+    background-color: #d4edda; /* Cor de fundo verde claro */
+    border: 1px solid #c3e6cb; /* Borda verde claro */
+}
+
+.responseMessage.error {
+    color: #dc3545; /* Vermelho para erro */
+    background-color: #f8d7da; /* Cor de fundo vermelho claro */
+    border: 1px solid #f5c6cb; /* Borda vermelho claro */
+}
+
+@media only screen and (max-width: 480px) {
+    .containerContatoFilho {
+        width: 90%;
+    }
+    .contato {
+        height: 600px;
+        flex-direction: column;
+    }
+    .sobreMimContato {
+        width: 100%;
+        gap: 10px;
+    }
+    .containerEntreContato {
+        width: 100%;
+    }
+    .formulario {
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    button {
+        width: 50%;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 999px) {
+    .containerContatoFilho {
+        width: 90%;
+    }
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+    button {
+        width: 65%;
+        font-size: 15px;
+    }
+}
